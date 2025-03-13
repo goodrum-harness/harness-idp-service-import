@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo001v27clientamplienceextensions
+  title: demo_001/v27-client-amplience-extensions
+  namespace: default
+  description: Automatically registered Harness Service
+  annotations:
+    harness.io/services: |
+      service: https://app.harness.io/ng/account/cNx_OWAtRhuiCWYmzqjqQQ/all/orgs/demo_001/projects/demo_001/settings/services/v27clientamplienceextensions?tab=summaryTab
+  labels:
+    harness_org: demo_001
+    harness_project: demo_001
+    harness_service: v27clientamplienceextensions
+    application: amplience
+    domain: client
+    version: v27
+  tags: 
+    - v27-client-amplience-extensions
+    - amplience
+    - client
+    - v27
+  links:
+    - url: https://app.harness.io/ng/account/cNx_OWAtRhuiCWYmzqjqQQ/all/orgs/demo_001/projects/demo_001/settings/services/v27clientamplienceextensions?tab=metrics
+      title: Harness Service Metrics
+      type: service-metric-dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: harness_account_all_users
+  system: demo001clientamplience
