@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: demo001client
+  title: demo_001/client
+  namespace: default
+  description: Meta Collection for client
+  annotations:
+  labels:
+    harness_org: demo_001
+    harness_project: demo_001
+  tags: []
+  links: []
+spec:
+  type: app-system
+  lifecycle: production
+  owner: harness_account_all_users

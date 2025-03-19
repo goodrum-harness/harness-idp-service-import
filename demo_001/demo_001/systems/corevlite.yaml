@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: demo001corevlite
+  title: demo_001/core_vlite
+  namespace: default
+  description: Meta Collection for core_vlite
+  annotations:
+  labels:
+    harness_org: demo_001
+    harness_project: demo_001
+  tags: []
+  links: []
+spec:
+  type: app-system
+  lifecycle: production
+  owner: harness_account_all_users
+  domain: demo001core
