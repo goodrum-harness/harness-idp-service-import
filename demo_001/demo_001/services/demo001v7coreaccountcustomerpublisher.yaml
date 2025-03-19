@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo001v7coreaccountcustomerpublisher
+  title: demo_001/v7-core-account-customerpublisher
+  namespace: default
+  description: Automatically registered Harness Service
+  annotations:
+    harness.io/services: |
+      service: https://app.harness.io/ng/account/cNx_OWAtRhuiCWYmzqjqQQ/all/orgs/demo_001/projects/demo_001/settings/services/v7coreaccountcustomerpublisher?tab=summaryTab
+  labels:
+    harness_org: demo_001
+    harness_project: demo_001
+    harness_service: v7coreaccountcustomerpublisher
+    application: account
+    domain: core
+    version: v7
+  tags: 
+    - v7-core-account-customerpublisher
+    - account
+    - core
+    - v7
+  links:
+    - url: https://app.harness.io/ng/account/cNx_OWAtRhuiCWYmzqjqQQ/all/orgs/demo_001/projects/demo_001/settings/services/v7coreaccountcustomerpublisher?tab=metrics
+      title: Harness Service Metrics
+      type: service-metric-dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: harness_account_all_users
+  system: demo001coreaccount

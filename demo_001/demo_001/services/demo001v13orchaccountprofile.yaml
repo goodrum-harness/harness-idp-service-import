@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo001v13orchaccountprofile
+  title: demo_001/v13-orch-account-profile
+  namespace: default
+  description: Automatically registered Harness Service
+  annotations:
+    harness.io/services: |
+      service: https://app.harness.io/ng/account/cNx_OWAtRhuiCWYmzqjqQQ/all/orgs/demo_001/projects/demo_001/settings/services/v13orchaccountprofile?tab=summaryTab
+  labels:
+    harness_org: demo_001
+    harness_project: demo_001
+    harness_service: v13orchaccountprofile
+    application: account
+    domain: orch
+    version: v13
+  tags: 
+    - v13-orch-account-profile
+    - account
+    - orch
+    - v13
+  links:
+    - url: https://app.harness.io/ng/account/cNx_OWAtRhuiCWYmzqjqQQ/all/orgs/demo_001/projects/demo_001/settings/services/v13orchaccountprofile?tab=metrics
+      title: Harness Service Metrics
+      type: service-metric-dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: harness_account_all_users
+  system: demo001orchaccount
