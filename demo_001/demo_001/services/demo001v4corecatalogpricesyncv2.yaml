@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo001v4corecatalogpricesyncv2
+  title: demo_001/v4-core-catalog-pricesync-v2
+  namespace: default
+  description: Automatically registered Harness Service
+  annotations:
+    harness.io/services: |
+      service: https://app.harness.io/ng/account/cNx_OWAtRhuiCWYmzqjqQQ/all/orgs/demo_001/projects/demo_001/settings/services/v4corecatalogpricesyncv2?tab=summaryTab
+  labels:
+    harness_org: demo_001
+    harness_project: demo_001
+    harness_service: v4corecatalogpricesyncv2
+    category: core
+    domain: catalog
+    version: v4
+  tags: 
+    - v4-core-catalog-pricesync-v2
+    - core
+    - catalog
+    - v4
+  links: 
+    - url: https://app.harness.io/ng/account/cNx_OWAtRhuiCWYmzqjqQQ/all/orgs/demo_001/projects/demo_001/settings/services/v4corecatalogpricesyncv2?tab=metrics
+      title: Harness Service Metrics
+      type: service-metric-dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: harness_account_all_users
+  subcomponentOf: Component:default/demo001corecatalog
