@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo001alerts
+  title: demo_001/alerts
+  namespace: default
+  description: Meta Collection for Category Alerts
+  labels:
+    harness_org: demo_001
+    harness_project: demo_001
+  tags: []
+  links: []
+spec:
+  type: app-category
+  lifecycle: production
+  owner: harness_account_all_users

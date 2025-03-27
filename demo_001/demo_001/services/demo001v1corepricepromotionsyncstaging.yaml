@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo001v1corepricepromotionsyncstaging
+  title: demo_001/v1-core-price-promotionsync-staging
+  namespace: default
+  description: Automatically registered Harness Service
+  annotations:
+    harness.io/services: |
+      service: https://app.harness.io/ng/account/cNx_OWAtRhuiCWYmzqjqQQ/all/orgs/demo_001/projects/demo_001/settings/services/v1corepricepromotionsyncstaging?tab=summaryTab
+  labels:
+    harness_org: demo_001
+    harness_project: demo_001
+    harness_service: v1corepricepromotionsyncstaging
+    category: core
+    domain: price
+    version: v1
+  tags: 
+    - v1-core-price-promotionsync-staging
+    - core
+    - price
+    - v1
+  links: 
+    - url: https://app.harness.io/ng/account/cNx_OWAtRhuiCWYmzqjqQQ/all/orgs/demo_001/projects/demo_001/settings/services/v1corepricepromotionsyncstaging?tab=metrics
+      title: Harness Service Metrics
+      type: service-metric-dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: harness_account_all_users
+  subcomponentOf: Component:default/demo001coreprice

@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo001infraalerts
+  title: demo_001/infra_alerts
+  namespace: default
+  description: Meta Collection for Infra:Alerts
+  labels:
+    harness_org: demo_001
+    harness_project: demo_001
+  tags: []
+  links: []
+spec:
+  type: app-domain
+  lifecycle: production
+  owner: harness_account_all_users
+  subcomponentOf: Component:default/demo001infra
+

@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo001corecatalog
+  title: demo_001/core_catalog
+  namespace: default
+  description: Meta Collection for Core:Catalog
+  labels:
+    harness_org: demo_001
+    harness_project: demo_001
+  tags: []
+  links: []
+spec:
+  type: app-domain
+  lifecycle: production
+  owner: harness_account_all_users
+  subcomponentOf: Component:default/demo001core
+
